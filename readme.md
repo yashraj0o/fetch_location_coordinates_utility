@@ -60,10 +60,10 @@ The project includes both unit tests and integration tests:
 
 ```bash
 # Run only unit tests
-pytest tests/unit_tests.py
+python -m pytest -vv unit_tests.py
 
 # Run only integration tests
-pytest tests/integration_tests.py
+python -m pytest -vv integration_tests.py
 ```
 
 Note: Integration tests require a valid API key in your `.env` file.
