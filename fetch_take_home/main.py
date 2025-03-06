@@ -46,6 +46,8 @@ def get_coordinates_by_zipcode(zip_code: str):
 
         if data:
             return f"{data['name']}, lat:{data['lat']}, lon:{data['lon']}"
+        else:
+            return f"location: {zip_code}, error: No data found for the location."
     
     except requests.exceptions.RequestException as e:
         return f"location: {zip_code}, error: API request failed: {e}"
